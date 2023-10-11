@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: blue;
+}
+
+main{
+    background-color: white;
+    box-shadow: 5px 5px 10px rgb(14, 51, 146);
+    width: 700px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 15px;
+    font: italic normal 17px Arial, sans-serif; 
+    /* 
+      medidas absolutas
+      cm, mm, in, px, pt, pc (pt e pc n�o s�o recomendadas pra tela)
+    */
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 1px 1px 0px rgb(120, 90, 12);
+    text-align: center;
+    color: goldenrod;
+}
+h2{
+    /*
+    Short hand
+    font: italic normal 20px arial, sans-serif;
+    */
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+}
+p{
+    text-indent: 40px;
+    text-align: justify;
+}
