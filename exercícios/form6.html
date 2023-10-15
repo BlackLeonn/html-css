@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+
+        fieldset{
+            margin: 10px 0px 10px;
+            border-radius: 10px;
+        }
+
+        input{
+            border-radius: 10px;
+        }
+        select{
+            width: 200px;
+            height: 25px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário teste 9</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Usuário e senha</legend>
+            <p> <label for="iusu">Usuário: </label>
+                <input type="text" name="usu" id="iusu" required placeholder="nome de usuário">
+            </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen" required minlength="5" placeholder="mínimo de 8 letras">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Média</legend>
+            <p>
+                <label for="inota">Nota: </label>
+                <input type="number" name="nota" id="inota" required step="0.1" placeholder="digite sua nota">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <p>
+                <input type="checkbox" name="front" id="ifront">
+                <label for="ifront">Front-end</label>
+                <input type="checkbox" name="back" id="iback">
+                <label for="iback">Back-end</label>
+                <input type="checkbox" name="mob" id="imob">
+                <label for="imob">Mobile</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="imas">
+                <label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Cor favorita: </legend>
+            <p>
+                <input type="color" id="icor" name="cor" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Satisfação</legend>
+            <input type="range" name="sats" id="isats">
+        </fieldset>
+        <fieldset>
+            <legend>Estado Civil</legend>
+            <p>
+                <select name="estado" id="iestado" required>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="Divorciado">Divorciado</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Profissão</legend>
+            <p>
+                <input type="text" id="iprof" name="profissão" list="listprof" required>
+                <datalist id="listprof">
+                    <option value="Prof">Professor</option>
+                    <option value="Eng">Engenheiro</option>
+                    <option value="dev">Desenvolvedor</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>
