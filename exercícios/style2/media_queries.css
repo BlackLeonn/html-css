@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        color: black;
+    }
+
+    #cell{
+        display: none;
+    }
+    
+    #tablet{
+        display: none;
+    }
+    
+    #print{
+        display: block;
+    }
+    
+    #pc{
+        display: none;
+    }
+    
+    #TV{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    body{
+        background-image: url(../imagens/img/back-tablet.jpg);
+    }
+
+    #cell{
+        display: none;
+    }
+    
+    #tablet{
+        display: block;
+    }
+    
+    #print{
+        display: none;
+    }
+    
+    #pc{
+        display: none;
+    }
+    
+    #TV{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1920px){
+    body{
+        background-image: url(../imagens/img/back-pc.jpg);
+    }
+    #cell{
+        display: none;
+    }
+    
+    #tablet{
+        display: none;
+    }
+    
+    #print{
+        display: none;
+    }
+    
+    #pc{
+        display: block;
+    }
+    
+    #TV{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    body{
+        background-image: url(../imagens/img/back-tv.jpg);
+    }
+    #cell{
+        display: none;
+    }
+    
+    #tablet{
+        display: none;
+    }
+    
+    #print{
+        display: none;
+    }
+    
+    #pc{
+        display: none;
+    }
+    
+    #TV{
+        display: block;
+    }
+}
